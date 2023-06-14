@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 1024px;
+}
+
+.navegador1 {
+    background-color: #222222;
+    color: #F3F3F3;
+    font-weight: 400;
+    font-size: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 60px;
+    padding-top: 4px;
+}
+
+.menu1 ul {
+    font-weight: 400;
+    font-size: 10px;
+    color: #F3F3F3;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.navegador2 {
+    background-color: #F0A83E;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.menu2 ul {
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+    display: flex;
+    width: 343px;
+    justify-content: space-between;
+}
+
+.banner {
+    background-image: url('../img/plato.svg');
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 12px;
+
+}
+
+.bannerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    width: 365px;
+    height: 54px;
+    text-align: center;
+    color: #3C2313;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+
+#tituloBanner {
+    font-weight: 400;
+    font-size: 16px;
+    color: #3C2313;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#botonComedores {
+    background-color: #F0A83E;
+    color: #FFFFFF;
+    width: 141px;
+    height: 49px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.productosDestacados {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.parte1Patita {
+    font-weight: 700;
+    font-size: 40px;
+    color: #3C2313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 49px;
+}
+
+.parte1Patita img {
+    width: 67px;
+    height: 71px;
+}
+
+.menu ul {
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 267px;
+}
+
+.item-nav {
+    color: #666666;
+    text-decoration: none;
+}
+
+.parte2Productos {
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes {
+    background-color: #FBFAF6;
+    height: 312px;
+    margin-right: 20px;
+}
+
+.nombreProducto {
+    font-weight: 500;
+    font-size: 15px;
+    color: #3C2313;
+    text-align: center;
+}
+
+.precioProducto {
+    font-weight: 500;
+    font-size: 15px;
+    color: #F0A83E;
+    text-align: center;
+}
+
+.contactanos {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: #3C2313;
+    padding-top: 78px;
+    padding-bottom: 20px;
+}
+
+.camposFormulario {
+    width: 340px;
+    height: 40px;
+    background: #3C2313;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 9px;
+    color: #FFFFFF;
+    padding-left: 14.11px;
+    padding-top: 15px;
+}
+
+.campos {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botonResetear {
+    width: 110px;
+    height: 34px;
+    background: #8A8787;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-left: 22px;
+}
+
+.botonEnviar {
+    width: 110px;
+    height: 34px;
+    background: #F0A83E;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-left: 32px;
+}
+
+.botones {
+    display: flex;
+    width: 226px;
+    justify-content: space-between;
+    padding-top: 41px;
+    padding-bottom: 75px;
+}
+
+.parte3Formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parte4Suscribete {
+    height: 60px;
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suscribete {
+    height: 23px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.suscribeteParte1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 393px;
+    padding-left: 23px;
+}
+
+.campoCorreo {
+    width: 271px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 9px;
+    color: #A0A0A0;
+    padding-top: 14px;
+    padding-left: 8px;
+}
+
+.suscribirme {
+    width: 70px;
+    height: 34px;
+    background: #3C2313;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 9px;
+    color: #FFFFFF;
+    padding-top: 12px;
+    padding-left: 11px;
+    margin-left: 5px;
+}
+
+.suscribeteParte2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 47px;
+}
+
+.parte5Contactenos {
+    background: #3C2313;
+}
+
+.divContactenos {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.contactenos {
+    display: flex;
+    padding-left: 70px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+}
+
+.tituloContactenos {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.subtituloContactenos {
+    font-weight: 700;
+    font-size: 10px;
+    color: #8A8787;
+}
+
+.iconosContactenos {
+    width: 58px;
+    height: 57px
+}
+
+.telefono {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 70px;
+}
+
+.logo {
+    width: 166px;
+    height: 23px;
+    width: 166px;
+
+}
+
+footer {
+    background-color: #222222;
+    font-weight: 700;
+    font-size: 10px;
+    height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4px;
+}
