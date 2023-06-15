@@ -5,10 +5,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    width: 1024px;
-}
-
 .navegador1 {
     background-color: #222222;
     color: #F3F3F3;
@@ -20,6 +16,7 @@ body {
     padding-left: 90px;
     padding-right: 60px;
     padding-top: 4px;
+    width: 100%;
 }
 
 .menu1 ul {
@@ -50,9 +47,17 @@ body {
     justify-content: space-between;
 }
 
+.menuMovil {
+    position: absolute;
+    z-index: -1;
+    left: 85.5%;
+}
+
 .banner {
     background-image: url('../img/plato.svg');
-    height: 409px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -101,6 +106,8 @@ h2 {
 .productosDestacados {
     padding-top: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .parte1Patita {
@@ -119,6 +126,7 @@ h2 {
 }
 
 .menu ul {
+    padding-top: 20px;
     font-weight: 400;
     font-size: 15px;
     display: flex;
@@ -194,7 +202,7 @@ h2 {
     font-size: 16px;
     color: #FFFFFF;
     padding-top: 8px;
-    padding-left: 22px;
+    text-align: center;
 }
 
 .botonEnviar {
@@ -206,7 +214,7 @@ h2 {
     font-size: 16px;
     color: #FFFFFF;
     padding-top: 8px;
-    padding-left: 32px;
+    text-align: center;
 }
 
 .botones {
@@ -233,7 +241,7 @@ h2 {
 .suscribete {
     height: 23px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
 }
 
@@ -279,6 +287,10 @@ h2 {
 
 .parte5Contactenos {
     background: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 70px;
 }
 
 .divContactenos {
@@ -311,19 +323,13 @@ h2 {
     height: 57px
 }
 
-.telefono {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 70px;
-}
 
 .logo {
     width: 166px;
     height: 23px;
-    width: 166px;
-
 }
+
+
 
 footer {
     background-color: #222222;
@@ -333,4 +339,103 @@ footer {
     color: #FFFFFF;
     text-align: center;
     padding: 4px;
+}
+
+@media(max-width:600px) {
+
+    .navegador1,
+    .menu2 {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .menuMovil {
+        z-index: 0;
+    }
+
+    .banner {
+        height: 410px;
+    }
+
+    h2 {
+        width: 375px;
+    }
+
+    .bannerInfo {
+        align-items: flex-end;
+    }
+
+    #botonComedores {
+
+        margin-right: 15px;
+    }
+
+    .parte1Patita img {
+        width: 90px;
+        height: 83px;
+    }
+
+    .parte1Patita {
+        font-size: 2rem;
+    }
+
+    .parte2Productos {
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+        justify-content: space-between;
+        padding-left: 17px;
+    }
+
+    .contactanos {
+        font-size: 2.5rem;
+        padding-top: 34px;
+    }
+
+    .botones {
+        width: 93%;
+        padding-bottom: 45px;
+    }
+
+    .botonResetear {
+        width: 48.7%;
+        height: 45px;
+        border-radius: 25px;
+        padding-top: 13px;
+        padding-left: 10px;
+    }
+
+    .botonEnviar {
+        width: 48.7%;
+        height: 45px;
+        border-radius: 25px;
+        padding-top: 13px;
+        padding-left: 18px;
+    }
+
+    .parte4Suscribete {
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+    .campoCorreo {
+        font-size: .8rem;
+    }
+
+    .suscribirme {
+        width: 100px;
+        height: 40px;
+        font-size: 0.8rem;
+        padding-top: 14px;
+        padding-left: 11px;
+    }
+
+    .parte5Contactenos {
+        flex-direction: column-reverse;
+        padding-top: 15px;
+    }
+
 }
