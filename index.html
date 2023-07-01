@@ -16,8 +16,25 @@
             <p>Grandes ofertas en comederos</p>
             <nav class="menu1">
                 <ul type="none">
-                    <li>Español<img src="img/Vector 1.png" alt="signo"></li>
-                    <li>ARG$<img src="img/Vector 1.png" alt="signo"></li>
+                    <li>
+                        <form method="" action="">
+                            <select class="idioma" name="idioma">
+                                <option>Español</option>
+                                <option>Inglés</option>
+                                <option>Frances</option>
+                                <option>Portugues</option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <form method="" action="">
+                            <select class="idioma" name="precio">
+                                <option>ARG$</option>
+                                <option>USD$</option>
+                                <option>COP$</option>
+                            </select>
+                        </form>
+                    </li>
                 </ul>
             </nav>
         </section>
@@ -25,10 +42,10 @@
             <img src="img/Logo1.png" alt="logo">
             <nav class="menu2">
                 <ul type="none">
-                    <li><img src="img/pawprint 1.png" alt="huella">Categorias</li>
-                    <li><img src="img/pawprint 1.png" alt="huella">Pet</li>
-                    <li><img src="img/pawprint 1.png" alt="huella">Nosotros</li>
-                    <li><img src="img/pawprint 1.png" alt="huella">Contactanos</li>
+                    <li><a href="" class="items"><img src="img/pawprint 1.png" alt="huella">Categorias</a></li>
+                    <li><a href="" class="items"><img src="img/pawprint 1.png" alt="huella">Pet</a></li>
+                    <li><a href="" class="items"><img src="img/pawprint 1.png" alt="huella">Nosotros</a></li>
+                    <li><a href="" class="items"><img src="img/pawprint 1.png" alt="huella">Contactanos</a></li>
                 </ul>
             </nav>
             <nav class="menuMovil">
@@ -44,7 +61,7 @@
             <div class="bannerInfo">
                 <h2>¡Es un placer tenerte aquí! </h2>
                 <p id="tituloBanner">¡Comederos en descuento!</p>
-                <p id="botonComedores">COMEDORES</p>
+                <button type="submit" id="botonComedores">COMEDORES</button>
             </div>
         </section>
         <section class="productosDestacados">
@@ -54,9 +71,9 @@
                 <nav class="menu">
                     <ul type="none">
                         <li><a href="" class="item-nav">Comedores</a></li>
-                        <li><a href="" class="item-nav">-</a></li>
+                        <li>-</li>
                         <li><a href="" class="item-nav">Accesorios</a></li>
-                        <li><a href="" class="item-nav">-</a></li>
+                        <li>-</li>
                         <li><a href="" class="item-nav">Comida</a></li>
                     </ul>
                 </nav>
@@ -81,25 +98,25 @@
         </section>
         <section class="parte3Formulario">
             <p class="contactanos">Contáctanos</p>
-            <article class="campos">
-                <p class="camposFormulario">Nombre y apellido</p>
-                <p class="camposFormulario">Ingresa tu correo electrónico</p>
-                <p class="camposFormulario">Teléfono</p>
-            </article>
-            <article class="botones">
-                <p class="botonResetear">Resetear</p>
-                <p class="botonEnviar">Enviar</p>
-            </article>
+            <form class="campos" action="" method="">
+                <input class="camposFormulario" type="text" name="nombre" placeholder="Nombre y apellido">
+                <input class="camposFormulario" type="email" name="email" placeholder="Ingresa tu correo electrónico">
+                <input class="camposFormulario" type="tel" name="telefono" placeholder="Teléfono">
+            </form>
+            <form method="" action="" class="botones">
+                <button type="reset" class="botonResetear">Resetear</button>
+                <button type="submit" class="botonEnviar">Enviar</button>
+            </form>
         </section>
         <section class="parte4Suscribete">
             <article class="suscribeteParte1">
                 <img src="img/enviar-correo 1.png" alt="correo">
                 <p class="suscribete">Suscríbete para más novedades</p>
             </article>
-            <article class="suscribeteParte2">
-                <p class="campoCorreo">Ingresa tu correo electronico</p>
-                <p class="suscribirme">Suscribirme</p>
-            </article>
+            <form class="suscribeteParte2" method="" action="">
+                <input class="campoCorreo" type="email" name="correo2" placeholder="Ingresa tu correo electronico">
+                <button type="submit" class="suscribirme">Suscribirme</button>
+            </form>
         </section>
         <section class="parte5Contactenos">
             <article class="contactos">
