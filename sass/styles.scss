@@ -1,0 +1,398 @@
+@import "reset";
+@import "colores";
+@import "mixins";
+
+body {
+
+    header {
+
+        .navegador1 {
+            @include formatoHeader($letraHeader1, 400, 10px, 100%);
+            background-color: $fondoHeader1;
+            height: 20px;
+            padding-left: 90px;
+            padding-right: 60px;
+
+            .menu1 {
+
+                ul {
+                    @include formatoHeader($letraHeader1, 400, 10px, 100px);
+
+                    li {
+
+                        form {
+
+                            .idioma {
+                                padding: 0px;
+                                background-color: $fondoHeader1;
+                                color: $letraHeader1;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .navegador2 {
+            background-color: $fondoHeader2;
+            height: 62px;
+            @include formatoFlex(row, space-between);
+            align-items: center;
+            padding-right: 40px;
+            padding-left: 40px;
+
+            .menu2 {
+
+                ul {
+                    @include formatoHeader($letraHeader2, 400, 13px, 343px);
+                    color: $letraHeader2;
+
+                    li {
+                        .items {
+                            @include itemsMenus;
+                        }
+                    }
+                }
+            }
+
+            .menuMovil {
+                position: absolute;
+                z-index: -1;
+                left: 85.5%;
+            }
+        }
+    }
+
+    main {
+        .banner {
+            background-image: url('../img/plato.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            @include formatoFlex(column, center);
+            align-items: flex-end;
+            padding-right: 12px;
+
+            .bannerInfo {
+                @include formatoFlex(column, none);
+                align-items: center;
+
+                h2 {
+                    @include formatoHeader($colorH2, 400, 30px, 365px);
+                    height: 54px;
+                    text-align: center;
+                    background-color: $letraHeader2;
+                    border-radius: 5px;
+                    padding: 10px 0px;
+                }
+
+                #tituloBanner {
+                    @include formatoHeader($colorH2, 400, 16px, none);
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                }
+
+                #botonComedores {
+                    @include botones($fondoHeader2, $letraHeader2, 141px, 49px, 5px, center, none);
+                }
+            }
+        }
+
+        .productosDestacados {
+            padding-top: 20px;
+            text-align: center;
+            @include formatoFlex(row, center);
+
+            .parte1Patita {
+                @include formatoHeader($colorH2, 700, 40px, none);
+                @include formatoFlex(column, none);
+                align-items: center;
+                padding-bottom: 49px;
+
+                img {
+                    width: 67px;
+                    height: 71px;
+                }
+
+                .menu {
+                    ul {
+                        padding-top: 20px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        @include formatoFlex(row, space-between);
+                        width: 267px;
+
+                        li {
+                            .item-nav {
+                                @include itemsNavMenus;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .parte2Productos {
+            @include formatoFlex(row, center);
+
+            .imagenes {
+                background-color: $colorImagenes;
+                height: 312px;
+                margin-right: 20px;
+
+                .nombreProducto {
+                    @include formatoHeader($colorH2, 500, 15px, none);
+                    justify-content: center;
+                }
+
+                .precioProducto {
+                    @include formatoHeader($fondoHeader2, 500, 15px, none);
+                    justify-content: center;
+                }
+            }
+        }
+
+        .parte3Formulario {
+            @include formatoFlex(column, none);
+            align-items: center;
+
+            .contactanos {
+                @include formatoHeader($colorH2, 700, 25px, none);
+                justify-content: center;
+                padding-top: 78px;
+                padding-bottom: 20px;
+            }
+
+            .campos {
+                height: 140px;
+                @include formatoFlex(column, space-between);
+                align-items: center;
+
+                .camposFormulario {
+                    @include botones($colorH2, $letraHeader2, 340px, 40px, 15px, none, none);
+                    font-weight: 400;
+                    font-size: 9px;
+                    padding-left: 14.11px;
+                }
+
+                .camposFormulario::placeholder {
+                    color: $letraHeader2;
+                }
+            }
+
+            .botones {
+                @include formatoFlex(row, space-between);
+                width: 226px;
+                padding-top: 41px;
+                padding-bottom: 75px;
+
+                .botonResetear {
+                    @include botones($colorBotonReset, $letraHeader2, 110px, 34px, 15px, center, none);
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+
+                .botonEnviar {
+                    @include botones($fondoHeader2, $letraHeader2, 110px, 34px, 15px, center, none);
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .parte4Suscribete {
+            height: 60px;
+            background-color: $fondoHeader2;
+            @include formatoFlex(row, space-between);
+
+            .suscribeteParte1 {
+                @include formatoFlex(row, space-between);
+                align-items: center;
+                width: 393px;
+                padding-left: 23px;
+
+                .suscribete {
+                    height: 23px;
+                    @include formatoHeader($letraHeader2, 700, 18px, none);
+                }
+            }
+
+            .suscribeteParte2 {
+                @include formatoFlex(row, flex-end);
+                align-items: center;
+                padding-right: 47px;
+
+                .campoCorreo {
+                    @include botones($letraHeader2, $colorCorreo, 271px, 40px, 15px, none, none);
+                    font-weight: 400;
+                    font-size: 9px;
+                    padding-left: 8px;
+                }
+
+                .campoCorreo::placeholder {
+                    color: $colorCorreo;
+                }
+
+                .suscribirme {
+                    @include botones($colorH2, $letraHeader2, 70px, 34px, 15px, none, none);
+                    font-weight: 700;
+                    font-size: 9px;
+                    margin-left: 5px;
+                }
+            }
+
+        }
+
+        .parte5Contactenos {
+            @include formatoFlex(row, space-between);
+            background: #3C2313;
+            align-items: center;
+            padding-right: 70px;
+
+            .contactos {
+
+                .contactenos {
+                    display: flex;
+                    padding-left: 70px;
+                    padding-top: 23px;
+                    padding-bottom: 20px;
+
+                    .iconosContactenos {
+                        width: 58px;
+                        height: 57px
+                    }
+
+                    .divContactenos {
+                        @include formatoFlex(column, none);
+                        padding-left: 25px;
+
+                        .tituloContactenos {
+                            @include formatoHeader($letraHeader2, 700, 18px, none);
+                        }
+
+                        .subtituloContactenos {
+                            @include formatoHeader($colorBotonReset, 700, 10px, none);
+                        }
+                    }
+                }
+            }
+
+            .logo {
+                width: 166px;
+                height: 23px;
+            }
+        }
+    }
+
+    footer {
+        @include botones($fondoHeader1, $letraHeader2, none, 20px, none, center, none);
+        font-weight: 700;
+        font-size: 10px;
+        padding: 4px;
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        header {
+
+            .navegador1 {
+                position: absolute;
+                z-index: -1;
+            }
+
+            .navegador2 {
+                .menu2 {
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                .menuMovil {
+                    z-index: 0;
+                }
+            }
+        }
+
+        main {
+            .banner {
+                height: 410px;
+
+                .bannerInfo {
+                    align-items: flex-end;
+
+                    h2 {
+                        width: 375px;
+                    }
+
+                    #botonComedores {
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            .productosDestacados {
+                .parte1Patita {
+                    font-size: 2rem;
+
+                    img {
+                        width: 90px;
+                        height: 83px;
+                    }
+                }
+            }
+
+            .parte2Productos {
+                @include formatoFlex(column, space-between);
+                align-items: center;
+                height: 1000px;
+                padding-left: 17px;
+            }
+
+            .parte3Formulario {
+                .contactanos {
+                    font-size: 2.5rem;
+                    padding-top: 34px;
+                }
+
+                .botones {
+                    width: 93%;
+                    padding-bottom: 45px;
+
+                    .botonResetear {
+                        @include botonesMedia(48.7%, 45px, 25px, 10px);
+                    }
+
+                    .botonEnviar {
+                        @include botonesMedia(48.7%, 45px, 25px, 18px);
+                    }
+                }
+            }
+
+            .parte4Suscribete {
+                height: 90px;
+                @include formatoFlex(column, none);
+                padding-bottom: 10px;
+                align-items: center;
+
+                .suscribeteParte2 {
+
+                    .campoCorreo {
+                        font-size: .8rem;
+                    }
+
+                    .suscribirme {
+                        width: 100px;
+                        height: 40px;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .parte5Contactenos {
+                flex-direction: column-reverse;
+                padding-top: 15px;
+            }
+        }
+    }
+}

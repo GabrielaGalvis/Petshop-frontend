@@ -106,7 +106,6 @@ h2 {
     border-radius: 5px;
     text-align: center;
     border: none;
-
 }
 
 .productosDestacados {
@@ -341,13 +340,10 @@ input::placeholder {
     height: 57px
 }
 
-
 .logo {
     width: 166px;
     height: 23px;
 }
-
-
 
 footer {
     background-color: #222222;
@@ -358,8 +354,6 @@ footer {
     text-align: center;
     padding: 4px;
 }
-
-
 
 @media(max-width:600px) {
 
@@ -386,7 +380,6 @@ footer {
     }
 
     #botonComedores {
-
         margin-right: 15px;
     }
 

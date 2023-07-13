@@ -1,0 +1,41 @@
+@mixin formatoHeader($letraHeader, $font-weight, $font-size, $width) {
+    color: $letraHeader;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    display: flex;
+    justify-content: space-between;
+    width: $width;
+}
+
+@mixin formatoFlex($flexDirection, $justify-content) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justify-content;
+}
+
+@mixin itemsMenus {
+    text-decoration: none;
+    color: $letraHeader2;
+}
+
+@mixin botones($background-color, $color, $width, $height, $border-radius, $text-align, $border) {
+    background-color: $background-color;
+    color: $color;
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    text-align: $text-align;
+    border: $border;
+}
+
+@mixin itemsNavMenus {
+    color: $colorItemNav;
+    text-decoration: none;
+}
+
+@mixin botonesMedia($width, $height, $border-radius, $padding-left) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    padding-left: $padding-left;
+}

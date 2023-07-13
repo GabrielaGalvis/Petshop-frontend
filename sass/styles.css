@@ -1,0 +1,445 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body header .navegador1 {
+  color: #F3F3F3;
+  font-weight: 400;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #222222;
+  height: 20px;
+  padding-left: 90px;
+  padding-right: 60px;
+}
+body header .navegador1 .menu1 ul {
+  color: #F3F3F3;
+  font-weight: 400;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+body header .navegador1 .menu1 ul li form .idioma {
+  padding: 0px;
+  background-color: #222222;
+  color: #F3F3F3;
+  border: none;
+}
+body header .navegador2 {
+  background-color: #F0A83E;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+body header .navegador2 .menu2 ul {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  width: 343px;
+  color: #FFFFFF;
+}
+body header .navegador2 .menu2 ul li .items {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+body header .navegador2 .menuMovil {
+  position: absolute;
+  z-index: -1;
+  left: 85.5%;
+}
+body main .banner {
+  background-image: url("../img/plato.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 12px;
+}
+body main .banner .bannerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+body main .banner .bannerInfo h2 {
+  color: #3C2313;
+  font-weight: 400;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 365px;
+  height: 54px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+body main .banner .bannerInfo #tituloBanner {
+  color: #3C2313;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+body main .banner .bannerInfo #botonComedores {
+  background-color: #F0A83E;
+  color: #FFFFFF;
+  width: 141px;
+  height: 49px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+body main .productosDestacados {
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body main .productosDestacados .parte1Patita {
+  color: #3C2313;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  padding-bottom: 49px;
+}
+body main .productosDestacados .parte1Patita img {
+  width: 67px;
+  height: 71px;
+}
+body main .productosDestacados .parte1Patita .menu ul {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 267px;
+}
+body main .productosDestacados .parte1Patita .menu ul li .item-nav {
+  color: #666666;
+  text-decoration: none;
+}
+body main .parte2Productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body main .parte2Productos .imagenes {
+  background-color: #FBFAF6;
+  height: 312px;
+  margin-right: 20px;
+}
+body main .parte2Productos .imagenes .nombreProducto {
+  color: #3C2313;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: none;
+  justify-content: center;
+}
+body main .parte2Productos .imagenes .precioProducto {
+  color: #F0A83E;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: none;
+  justify-content: center;
+}
+body main .parte3Formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+body main .parte3Formulario .contactanos {
+  color: #3C2313;
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: none;
+  justify-content: center;
+  padding-top: 78px;
+  padding-bottom: 20px;
+}
+body main .parte3Formulario .campos {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .parte3Formulario .campos .camposFormulario {
+  background-color: #3C2313;
+  color: #FFFFFF;
+  width: 340px;
+  height: 40px;
+  border-radius: 15px;
+  text-align: none;
+  border: none;
+  font-weight: 400;
+  font-size: 9px;
+  padding-left: 14.11px;
+}
+body main .parte3Formulario .campos .camposFormulario::-moz-placeholder {
+  color: #FFFFFF;
+}
+body main .parte3Formulario .campos .camposFormulario::placeholder {
+  color: #FFFFFF;
+}
+body main .parte3Formulario .botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 226px;
+  padding-top: 41px;
+  padding-bottom: 75px;
+}
+body main .parte3Formulario .botones .botonResetear {
+  background-color: #8A8787;
+  color: #FFFFFF;
+  width: 110px;
+  height: 34px;
+  border-radius: 15px;
+  text-align: center;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+body main .parte3Formulario .botones .botonEnviar {
+  background-color: #F0A83E;
+  color: #FFFFFF;
+  width: 110px;
+  height: 34px;
+  border-radius: 15px;
+  text-align: center;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+body main .parte4Suscribete {
+  height: 60px;
+  background-color: #F0A83E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main .parte4Suscribete .suscribeteParte1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 393px;
+  padding-left: 23px;
+}
+body main .parte4Suscribete .suscribeteParte1 .suscribete {
+  height: 23px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: none;
+}
+body main .parte4Suscribete .suscribeteParte2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 47px;
+}
+body main .parte4Suscribete .suscribeteParte2 .campoCorreo {
+  background-color: #FFFFFF;
+  color: #A0A0A0;
+  width: 271px;
+  height: 40px;
+  border-radius: 15px;
+  text-align: none;
+  border: none;
+  font-weight: 400;
+  font-size: 9px;
+  padding-left: 8px;
+}
+body main .parte4Suscribete .suscribeteParte2 .campoCorreo::-moz-placeholder {
+  color: #A0A0A0;
+}
+body main .parte4Suscribete .suscribeteParte2 .campoCorreo::placeholder {
+  color: #A0A0A0;
+}
+body main .parte4Suscribete .suscribeteParte2 .suscribirme {
+  background-color: #3C2313;
+  color: #FFFFFF;
+  width: 70px;
+  height: 34px;
+  border-radius: 15px;
+  text-align: none;
+  border: none;
+  font-weight: 700;
+  font-size: 9px;
+  margin-left: 5px;
+}
+body main .parte5Contactenos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #3C2313;
+  align-items: center;
+  padding-right: 70px;
+}
+body main .parte5Contactenos .contactos .contactenos {
+  display: flex;
+  padding-left: 70px;
+  padding-top: 23px;
+  padding-bottom: 20px;
+}
+body main .parte5Contactenos .contactos .contactenos .iconosContactenos {
+  width: 58px;
+  height: 57px;
+}
+body main .parte5Contactenos .contactos .contactenos .divContactenos {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  padding-left: 25px;
+}
+body main .parte5Contactenos .contactos .contactenos .divContactenos .tituloContactenos {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: none;
+}
+body main .parte5Contactenos .contactos .contactenos .divContactenos .subtituloContactenos {
+  color: #8A8787;
+  font-weight: 700;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: none;
+}
+body main .parte5Contactenos .logo {
+  width: 166px;
+  height: 23px;
+}
+body footer {
+  background-color: #222222;
+  color: #FFFFFF;
+  width: none;
+  height: 20px;
+  border-radius: none;
+  text-align: center;
+  border: none;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 4px;
+}
+
+@media (max-width: 600px) {
+  body header .navegador1 {
+    position: absolute;
+    z-index: -1;
+  }
+  body header .navegador2 .menu2 {
+    position: absolute;
+    z-index: -1;
+  }
+  body header .navegador2 .menuMovil {
+    z-index: 0;
+  }
+  body main .banner {
+    height: 410px;
+  }
+  body main .banner .bannerInfo {
+    align-items: flex-end;
+  }
+  body main .banner .bannerInfo h2 {
+    width: 375px;
+  }
+  body main .banner .bannerInfo #botonComedores {
+    margin-right: 15px;
+  }
+  body main .productosDestacados .parte1Patita {
+    font-size: 2rem;
+  }
+  body main .productosDestacados .parte1Patita img {
+    width: 90px;
+    height: 83px;
+  }
+  body main .parte2Productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1000px;
+    padding-left: 17px;
+  }
+  body main .parte3Formulario .contactanos {
+    font-size: 2.5rem;
+    padding-top: 34px;
+  }
+  body main .parte3Formulario .botones {
+    width: 93%;
+    padding-bottom: 45px;
+  }
+  body main .parte3Formulario .botones .botonResetear {
+    width: 48.7%;
+    height: 45px;
+    border-radius: 25px;
+    padding-left: 10px;
+  }
+  body main .parte3Formulario .botones .botonEnviar {
+    width: 48.7%;
+    height: 45px;
+    border-radius: 25px;
+    padding-left: 18px;
+  }
+  body main .parte4Suscribete {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+  body main .parte4Suscribete .suscribeteParte2 .campoCorreo {
+    font-size: 0.8rem;
+  }
+  body main .parte4Suscribete .suscribeteParte2 .suscribirme {
+    width: 100px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+  body main .parte5Contactenos {
+    flex-direction: column-reverse;
+    padding-top: 15px;
+  }
+}/*# sourceMappingURL=styles.css.map */
